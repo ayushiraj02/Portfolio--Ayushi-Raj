@@ -384,7 +384,7 @@ Sent from Ayushi Raj Portfolio Website
                   variant="outline" 
                   size="sm" 
                   className="w-full bg-transparent"
-                  onClick={() => window.open("https://drive.google.com/file/d/1upFNIbqAtWM3wkM7hHDp4QsMUoo5DSUg/view?usp=sharing", "_blank")}
+                  onClick={() => window.open("https://drive.google.com/file/d/1eEaxwKN8beBJlwQeNH_mBwd0xYTXX4bp/view?usp=sharing", "_blank")}
                 >
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
