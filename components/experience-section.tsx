@@ -27,85 +27,107 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    id: "ameotech",
-    title: "Python Backend Developer",
-    company: "Ameotech Technologies",
-    location: "Chandigarh",
-    duration: "Jan 2025 – Present",
+    id: "brucode",
+    title: "Software Engineer / Python Backend Engineer",
+    company: "Brucode Technologies Pvt Ltd",
+    location: "India",
+    duration: "Feb 2026 – Present",
     period: "Current",
     type: "current",
     description: [
-      "Developed and integrated secure RESTful APIs using Django and JWT authentication, enhancing application security and data protection.",
-      "Engineered and deployed a Cognitive Web Agent using RAG and LangChain, improving knowledge retrieval speed.",
+      "Develop secure and scalable backend APIs for banking systems within a distributed financial platform.",
+      "Migrate backend services from Golang to Python/FastAPI while maintaining API compatibility and functionality.",
+      "Implement JWT-based authentication, API security, and system-level integrations.",
+      "Troubleshoot production issues, identify root causes, and collaborate with cross-functional teams on fixes.",
     ],
     achievements: [
       {
-        metric: "API Security",
-        value: "100%",
-        description: "Secure JWT authentication implementation",
+        metric: "Service Migration",
+        value: "Go → Python",
+        description: "Contributed to migrating banking services to Python",
       },
       {
-        metric: "Knowledge Retrieval",
-        value: "↑45%",
-        description: "Speed improvement with RAG implementation",
+        metric: "API Compatibility",
+        value: "Maintained",
+        description: "Minimized disruption to existing integrations",
+      },
+      {
+        metric: "Production Support",
+        value: "Resolved",
+        description: "Supported troubleshooting and remediation of API issues",
       },
     ],
-    technologies: ["Django", "JWT", "RAG", "LangChain", "Python", "REST API"],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Golang",
+      "REST APIs",
+      "JWT",
+      "PostgreSQL",
+      "MongoDB",
+      "SQLAlchemy",
+      "Alembic",
+      "Docker",
+      "Git",
+      "Postman",
+    ],
     highlights: [
-      "Built secure authentication systems",
-      "Implemented AI-powered knowledge retrieval",
-      "Enhanced application security protocols",
+      "Banking and Open Banking backend systems",
+      "Golang to Python/FastAPI migration",
+      "Production troubleshooting and API security",
     ],
   },
   {
-    id: "aiinfox",
-    title: "Jr. Data Scientist",
-    company: "AiInfox",
-    location: "Chandigarh",
-    duration: "Aug – Dec 2024",
-    period: "5 months",
+    id: "ameotech",
+    title: "Python Backend Developer",
+    company: "Ameotech Technologies",
+    location: "India",
+    duration: "Aug 2024 – Jan 2026",
+    period: "Past",
     type: "past",
     description: [
-      "Developed a Random Forest model to predict stock prices (OHLC data) with 87% accuracy.",
-      "Deployed real-time forecasting app via Flask APIs on AWS EC2, reducing query response time by 35%.",
-      "Automated data pipelines and text extraction workflows using LLMs, improving processing accuracy by 40%.",
+      "Built secure and scalable REST APIs using Django with JWT-based authentication.",
+      "Optimized SQL queries and backend operations to improve application performance.",
+      "Developed a Cognitive Web Agent using RAG and LangChain for context-aware information retrieval.",
+      "Deployed ML applications and automated ETL and LLM-based data pipelines on AWS.",
     ],
     achievements: [
       {
-        metric: "Model Accuracy",
-        value: "87%",
-        description: "Stock price prediction accuracy",
+        metric: "API Performance",
+        value: "↑25%",
+        description: "Improved performance through SQL and query optimization",
       },
       {
-        metric: "Response Time",
-        value: "↓35%",
-        description: "Query response time reduction",
+        metric: "Cognitive Agent",
+        value: "RAG",
+        description: "Built context-aware information retrieval with LangChain",
       },
       {
-        metric: "Processing Accuracy",
-        value: "↑40%",
-        description: "Automated pipeline improvement",
+        metric: "Cloud Deployment",
+        value: "AWS",
+        description: "Deployed ML applications and automated data pipelines",
       },
     ],
-    technologies: ["Python", "Random Forest", "Flask", "AWS EC2", "LLMs", "Data Pipelines"],
+    technologies: ["Python", "Django", "REST APIs", "JWT", "SQL", "LangChain", "RAG", "LLMs", "AWS EC2", "ETL", "Machine Learning"],
     highlights: [
-      "Built ML model with 87% accuracy",
-      "Deployed real-time forecasting system",
-      "Automated data processing workflows",
+      "Backend API development",
+      "RAG and LLM-based application development",
+      "AWS deployment and ML pipelines",
     ],
   },
   {
     id: "enest",
     title: "Data Analyst",
     company: "eNest Technologies Pvt Ltd",
-    location: "Chandigarh",
-    duration: "Jan – July 2024",
-    period: "7 months",
+    location: "India",
+    duration: "Jan 2024 – July 2024",
+    period: "Past",
     type: "past",
     description: [
       "Analyzed 590M+ records using statistical methods and boosting decision-making speed by 30%.",
-      "Improved forecast accuracy by 20% via ML models (Random Forest, XGBoost, Catboost)",
-      "Automated ETL pipelines and created Power BI dashboards for business reporting.",
+      "Improved forecasting accuracy by 20% using Random Forest, XGBoost, and CatBoost.",
+      "Automated ETL workflows and reporting processes to reduce manual data-processing effort.",
+      "Created Power BI dashboards to provide actionable business insights.",
     ],
     achievements: [
       {
@@ -124,11 +146,11 @@ const experiences: Experience[] = [
         description: "ML model improvements",
       },
     ],
-    technologies: ["Python", "Random Forest", "XGBoost", "CatBoost", "Power BI", "ETL"],
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Random Forest", "XGBoost", "CatBoost", "SQL", "ETL", "Power BI", "Matplotlib"],
     highlights: [
-      "Processed 590M+ data records",
-      "Built automated ETL pipelines",
-      "Created comprehensive BI dashboards",
+      "Analyzed 590M+ records",
+      "Improved forecasting accuracy by 20%",
+      "Built automated ETL and reporting pipelines",
     ],
   },
 ]
@@ -300,8 +322,6 @@ export function ExperienceSection() {
                             e.stopPropagation();
                             if (exp.company === "Ameotech Technologies") {
                               window.open("https://www.ameotech.com/", "_blank");
-                            } else if (exp.company === "AiInfox") {
-                              window.open("https://aiinfox.com/", "_blank");
                             } else if (exp.company === "eNest Technologies Pvt Ltd") {
                               window.open("https://enestit.com/", "_blank");
                             }
@@ -321,7 +341,7 @@ export function ExperienceSection() {
         {/* Career Summary */}
         <div className="mt-16 grid md:grid-cols-4 gap-4">
           <Card className="glass p-6 text-center">
-            <div className="text-2xl font-bold text-primary mb-2">1.5+</div>
+            <div className="text-2xl font-bold text-primary mb-2">2.5+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </Card>
           <Card className="glass p-6 text-center">
